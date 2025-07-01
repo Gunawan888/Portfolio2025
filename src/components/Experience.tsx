@@ -4,10 +4,10 @@ import { Calendar, MapPin, Award } from 'lucide-react';
 const Experience = () => {
   const experiences = [
     {
-      title: 'Senior AI/ML Engineer',
-      company: 'TechCorp AI Solutions',
-      location: 'Remote',
-      period: '2022 - Present',
+      title: 'Senior Consultant',
+      company: 'Ernst & Young',
+      location: 'Sydney',
+      period: 'Sep 2023 - Present',
       description: 'Leading AI initiatives and machine learning model development for enterprise clients. Architecting scalable ML pipelines and mentoring junior data scientists.',
       achievements: [
         'Led development of production ML systems serving millions of users',
@@ -17,29 +17,41 @@ const Experience = () => {
       ]
     },
     {
-      title: 'Data Scientist',
-      company: 'FinTech Innovations',
-      location: 'Jakarta, Indonesia',
-      period: '2020 - 2022',
+      title: 'Technical Consultant',
+      company: 'Watermelon Research',
+      location: 'Sydney, Australia',
+      period: 'Dec 2020 - Sep 2023',
       description: 'Developed predictive models for financial risk assessment and fraud detection. Built real-time analytics dashboards for executive decision making.',
       achievements: [
-        'Built fraud detection system with industry-leading performance',
-        'Created customer segmentation models improving business outcomes',
-        'Developed credit scoring algorithms with high accuracy',
-        'Presented insights to C-level executives regularly'
+        'Technical delivery of online software solutions, such as surveys, reporting and dashboarding tools (based on a SaaS environment (Confirmit) using ASP, JScript.NET, jQuery, HTML and CSS)',
+        'Developing bespoke dashboards using Confirmit Reportal (Integrated with Highcharts)',
+        'Implementation and maintenance of automation processes using Python script',
+        'Liaising with stakeholders to scope out technical feasibility, advising on best practice and formalising specifications'
       ]
     },
     {
-      title: 'Junior Data Analyst',
-      company: 'DataDriven Consulting',
-      location: 'Jakarta, Indonesia',
-      period: '2019 - 2020',
+      title: 'Data Analyst (Salesforce)',
+      company: 'Eco Outdoor Group',
+      location: 'Sydney, Australia',
+      period: 'Dec 2019 - Apr 2020',
       description: 'Performed exploratory data analysis and created business intelligence reports. Collaborated with cross-functional teams to identify data-driven opportunities.',
       achievements: [
-        'Automated manual reporting processes across multiple departments',
-        'Created interactive dashboards for various business units',
-        'Identified significant operational cost savings opportunities',
-        'Trained stakeholders on data visualization tools and techniques'
+        'Developed and managed real-time sales performance dashboard (based on Salesforce environment using HTML, CSS, and Salesforce Object Query Language)',
+        'Generated weekly sales KPI report for sales manager (Power BI & Excel)',
+        'Provided Salesforce administrative support to sales team & managed data integrity between Salesforce and NetSuite',
+        'Planned and set up dashboard hierarchy management for users across Australia and USA'
+      ]
+    },
+    {
+      title: 'Research Assistant',
+      company: 'Global Big Data Technology Center (Under UTS)',
+      location: 'Sydney, Australia',
+      period: 'Dec 2018 - Aug 2019',
+      description: 'Working with Dr Jing Song Xu on Automatic Sheep Counting in Live Export Industry research. My responsibility includes:',
+      achievements: [
+        'Preprocessed sheep training datasets and performed anomaly detection using Python script',
+        'Trained and improved the performance of TensorFlow Mobile model',
+        'Evaluated & benchmarked several object detection model frameworks such as TensorFlow, OpenCV, SSD Mobile'
       ]
     }
   ];
@@ -62,18 +74,16 @@ const Experience = () => {
 
           <div className="space-y-12">
             {experiences.map((exp, index) => (
-              <div key={index} className={`relative flex items-center ${
-                index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
-              } animate-fade-in-up`} style={{ animationDelay: `${index * 0.2}s` }}>
+              <div key={index} className={`relative flex items-center ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
+                } animate-fade-in-up`} style={{ animationDelay: `${index * 0.2}s` }}>
                 {/* Timeline dot */}
                 <div className="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 w-6 h-6 bg-gradient-to-r from-emerald-600 to-violet-600 rounded-full border-4 border-white dark:border-slate-900 shadow-lg z-10 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                   <div className="w-2 h-2 bg-white rounded-full animate-pulse"></div>
                 </div>
 
                 {/* Content */}
-                <div className={`ml-16 md:ml-0 md:w-1/2 ${
-                  index % 2 === 0 ? 'md:pr-12' : 'md:pl-12'
-                }`}>
+                <div className={`ml-16 md:ml-0 md:w-1/2 ${index % 2 === 0 ? 'md:pr-12' : 'md:pl-12'
+                  }`}>
                   <div className="bg-gradient-to-r from-slate-50/80 to-emerald-50/80 dark:from-slate-800/80 dark:to-emerald-900/30 p-6 rounded-3xl shadow-lg hover:shadow-xl dark:hover:shadow-slate-700/30 transition-all duration-500 hover:-translate-y-2 border border-slate-200/50 dark:border-slate-700/50 group backdrop-blur-sm">
                     <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4">
                       <h3 className="text-xl font-semibold text-slate-800 dark:text-white group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors duration-300">
@@ -84,7 +94,7 @@ const Experience = () => {
                         <span>{exp.period}</span>
                       </div>
                     </div>
-                    
+
                     <div className="flex items-center space-x-2 text-slate-600 dark:text-slate-300 mb-4">
                       <span className="font-medium">{exp.company}</span>
                       <span>•</span>
