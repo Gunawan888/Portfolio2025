@@ -28,7 +28,6 @@ const Header = () => {
         ? 'bg-white/95 dark:bg-slate-900/95 backdrop-blur-sm shadow-lg border-b border-gray-200 dark:border-slate-700' 
         : 'bg-transparent'
     }`}>
-      <link rel="shortcut icon" type="image/png" href="img/icon.png"/>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <div className="text-2xl font-bold text-slate-800 dark:text-white animate-fade-in">
