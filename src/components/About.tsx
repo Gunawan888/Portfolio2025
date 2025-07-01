@@ -143,7 +143,7 @@ const About = () => {
             </div>
             
             <div className="flex flex-wrap gap-3">
-              {['Python', 'TensorFlow', 'PyTorch', 'Scikit-learn', 'Pandas', 'Apache Spark', 'MLflow', 'Kubernetes'].map((skill, index) => (
+              {['Python', 'R', 'SQL', 'IBM SPSS', 'Power BI','Azure', 'Qualtrics'].map((skill, index) => (
                 <span 
                   key={skill} 
                   className="group px-4 py-2 bg-gradient-to-r from-emerald-100/80 to-violet-100/80 dark:from-emerald-900/30 dark:to-violet-900/30 text-emerald-800 dark:text-emerald-300 rounded-2xl text-sm font-medium animate-fade-in-up font-mono hover:scale-105 transition-all duration-300 backdrop-blur-sm border border-emerald-200/50 dark:border-emerald-800/50 hover:shadow-lg cursor-pointer"
@@ -154,16 +154,6 @@ const About = () => {
               ))}
             </div>
 
-            {/* AI Specialization Badge */}
-            <div className="mt-6 p-4 bg-gradient-to-r from-emerald-50/80 to-violet-50/80 dark:from-emerald-900/20 dark:to-violet-900/20 rounded-2xl border border-emerald-200/50 dark:border-emerald-800/50 backdrop-blur-sm hover:shadow-lg transition-all duration-300 group">
-              <div className="flex items-center space-x-3">
-                <Bot className="w-6 h-6 text-emerald-600 dark:text-emerald-400 group-hover:animate-bounce" />
-                <div>
-                  <h4 className="font-semibold text-slate-800 dark:text-white group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors duration-300">AI Specialization</h4>
-                  <p className="text-sm text-slate-600 dark:text-slate-300">Deep Learning • Computer Vision • NLP • MLOps</p>
-                </div>
-              </div>
-            </div>
           </div>
 
           <div className="animate-fade-in-right">
@@ -188,13 +178,6 @@ const About = () => {
                 {highlight.description}
               </p>
               
-              {/* AI Feature Badge */}
-              <div className="mt-3 px-3 py-1 bg-gradient-to-r from-emerald-100/60 to-violet-100/60 dark:from-emerald-900/20 dark:to-violet-900/20 rounded-full backdrop-blur-sm border border-emerald-200/30 dark:border-emerald-800/30 group-hover:scale-105 transition-transform duration-300">
-                <div className="flex items-center space-x-2">
-                  <Sparkles className="w-3 h-3 text-emerald-600 dark:text-emerald-400 group-hover:animate-spin" />
-                  <span className="text-xs font-medium text-emerald-800 dark:text-emerald-300">{highlight.aiFeature}</span>
-                </div>
-              </div>
             </div>
           ))}
         </div>

@@ -111,7 +111,7 @@ const Contact = () => {
             </div>
 
             {/* Consultation Types */}
-            <div className="pt-8 border-t border-slate-200/50 dark:border-slate-600/50">
+            {/* <div className="pt-8 border-t border-slate-200/50 dark:border-slate-600/50">
               <h4 className="font-medium text-slate-800 dark:text-white mb-4">Consultation Areas</h4>
               <div className="space-y-2">
                 {consultationTypes.map((type, index) => (
@@ -121,7 +121,7 @@ const Contact = () => {
                   </div>
                 ))}
               </div>
-            </div>
+            </div> */}
 
             <div className="pt-8 border-t border-slate-200/50 dark:border-slate-600/50">
               <h4 className="font-medium text-slate-800 dark:text-white mb-4">Connect With Me</h4>
@@ -179,7 +179,7 @@ const Contact = () => {
                 </div>
               </div>
               
-              <div>
+              {/* <div>
                 <label htmlFor="subject" className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
                   Project Type *
                 </label>
@@ -198,11 +198,11 @@ const Contact = () => {
                   <option value="training">Training & Workshops</option>
                   <option value="other">Other</option>
                 </select>
-              </div>
+              </div> */}
               
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
-                  Project Details *
+                  Message *
                 </label>
                 <textarea
                   id="message"

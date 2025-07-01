@@ -187,50 +187,7 @@ const Projects = () => {
           ))}
         </div>
 
-        <div className="text-center mt-12 animate-fade-in-up">
-          <button className="group bg-gradient-to-r from-emerald-600 to-violet-600 text-white px-8 py-3 rounded-2xl font-semibold hover:from-emerald-700 hover:to-violet-700 transition-all duration-300 flex items-center space-x-2 mx-auto hover:scale-105 shadow-lg hover:shadow-xl relative overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-r from-emerald-400 to-violet-400 opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
-            <span className="relative z-10">View All AI Projects</span>
-            <ArrowRight size={20} className="relative z-10 group-hover:translate-x-1 transition-transform duration-300" />
-          </button>
-        </div>
 
-        {/* AI Innovation Showcase */}
-        <div className="mt-16 p-8 bg-gradient-to-r from-emerald-50/80 to-violet-50/80 dark:from-emerald-900/20 dark:to-violet-900/20 rounded-3xl border border-emerald-200/50 dark:border-emerald-800/50 animate-fade-in-up backdrop-blur-sm hover:shadow-lg transition-all duration-500 group">
-          <div className="text-center">
-            <div className="flex justify-center mb-4">
-              <Bot className="w-12 h-12 text-emerald-600 dark:text-emerald-400 group-hover:animate-bounce" />
-            </div>
-            <h4 className="text-xl font-semibold text-slate-800 dark:text-white mb-3 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors duration-300">
-              Next-Generation AI Solutions
-            </h4>
-            <p className="text-slate-600 dark:text-slate-300 leading-relaxed max-w-3xl mx-auto group-hover:text-slate-700 dark:group-hover:text-slate-200 transition-colors duration-300">
-              Every project leverages cutting-edge artificial intelligence technologies including deep learning, 
-              neural networks, computer vision, and natural language processing. Built with scalability, 
-              performance, and real-world impact in mind.
-            </p>
-            
-            <div className="mt-6 grid grid-cols-2 md:grid-cols-4 gap-4">
-              {[
-                { name: 'Deep Learning', icon: <Brain className="w-5 h-5" /> },
-                { name: 'Computer Vision', icon: <Cpu className="w-5 h-5" /> },
-                { name: 'NLP', icon: <Zap className="w-5 h-5" /> },
-                { name: 'MLOps', icon: <Activity className="w-5 h-5" /> }
-              ].map((tech, index) => (
-                <div key={tech.name} className="p-3 bg-white/60 dark:bg-slate-800/60 rounded-2xl backdrop-blur-sm border border-slate-200/50 dark:border-slate-700/50 hover:scale-105 transition-transform duration-300 group/tech cursor-pointer">
-                  <div className="flex items-center justify-center space-x-2">
-                    <div className="text-emerald-600 dark:text-emerald-400 group-hover/tech:animate-pulse">
-                      {tech.icon}
-                    </div>
-                    <span className="text-sm font-medium text-slate-700 dark:text-slate-300 group-hover/tech:text-emerald-600 dark:group-hover/tech:text-emerald-400 transition-colors duration-300">
-                      {tech.name}
-                    </span>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );

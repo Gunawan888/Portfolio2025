@@ -57,9 +57,9 @@ const Footer = () => {
         
         <div className="border-t border-slate-700 mt-8 pt-8 text-center">
           <p className="text-slate-300 flex items-center justify-center space-x-2">
-            <span>© 2024 Gunawan. Crafted with</span>
+            <span>© 2025 Gunawan. Crafted with</span>
             <Heart className="w-4 h-4 text-pink-500 animate-pulse" />
-            <span>and powered by data</span>
+            <span>and powered by coffee</span>
           </p>
         </div>
       </div>

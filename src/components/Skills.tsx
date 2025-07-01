@@ -10,43 +10,45 @@ const Skills = () => {
       icon: <Brain className="w-6 h-6" />,
       color: 'emerald',
       skills: ['TensorFlow', 'PyTorch', 'Scikit-learn', 'Keras', 'XGBoost', 'LightGBM'],
-      aiFeature: 'Neural Networks & Deep Learning'
     },
     {
       title: 'Data Analysis',
       icon: <BarChart3 className="w-6 h-6" />,
       color: 'violet',
       skills: ['Pandas', 'NumPy', 'R', 'Statistical Analysis', 'A/B Testing', 'Time Series'],
-      aiFeature: 'Automated Pattern Recognition'
     },
-    {
-      title: 'Data Engineering',
-      icon: <Database className="w-6 h-6" />,
-      color: 'pink',
-      skills: ['Apache Spark', 'Hadoop', 'Kafka', 'Airflow', 'ETL Pipelines', 'Data Warehousing'],
-      aiFeature: 'Intelligent Data Pipelines'
-    },
+    // {
+    //   title: 'Data Engineering',
+    //   icon: <Database className="w-6 h-6" />,
+    //   color: 'pink',
+    //   skills: ['Apache Spark', 'Hadoop', 'Kafka', 'Airflow', 'ETL Pipelines', 'Data Warehousing'],
+    //   aiFeature: 'Intelligent Data Pipelines'
+    // },
     {
       title: 'Programming',
       icon: <Code className="w-6 h-6" />,
       color: 'cyan',
-      skills: ['Python', 'R', 'SQL', 'Scala', 'Java', 'Git'],
-      aiFeature: 'AI-Powered Development'
+      skills: ['Python', 'R', 'SQL', 'Java', 'C#', 'Javascript', 'Raect', 'Git'],
     },
     {
       title: 'Visualization',
       icon: <Cpu className="w-6 h-6" />,
       color: 'orange',
-      skills: ['Tableau', 'Power BI', 'Matplotlib', 'Seaborn', 'Plotly', 'D3.js'],
+      skills: ['Tableau', 'Power BI', 'Matplotlib', 'QGIS'],
       aiFeature: 'Interactive AI Dashboards'
     },
     {
       title: 'Cloud & MLOps',
       icon: <Cloud className="w-6 h-6" />,
       color: 'indigo',
-      skills: ['AWS', 'GCP', 'Azure', 'Docker', 'Kubernetes', 'MLflow'],
-      aiFeature: 'Automated ML Deployment'
-    }
+      skills: ['AWS', 'GCP', 'Azure', 'Docker'],
+    },
+    {
+      title: 'SaaS',
+      icon: <Code className="w-6 h-6" />,
+      color: 'cyan',
+      skills: ['Qualtrics', 'Confirmit (Forsta)', 'Voxco', 'Salesforce', 'SAP'],
+    },
   ];
 
   const getColorClasses = (color: string) => {
@@ -64,21 +66,21 @@ const Skills = () => {
   const AIMLPipeline = () => (
     <div className="bg-gradient-to-r from-slate-50/80 to-emerald-50/80 dark:from-slate-800/80 dark:to-emerald-900/30 p-8 rounded-3xl mb-12 backdrop-blur-sm border border-slate-200/50 dark:border-slate-700/50 group hover:shadow-lg transition-all duration-500 relative overflow-hidden">
       {/* AI Processing Animation */}
-      <div className="absolute top-4 right-4 flex items-center space-x-2 opacity-60">
+      {/* <div className="absolute top-4 right-4 flex items-center space-x-2 opacity-60">
         <Activity className="w-4 h-4 text-emerald-600 dark:text-emerald-400 animate-pulse" />
         <span className="text-xs text-slate-600 dark:text-slate-400 font-mono">AI Pipeline Active</span>
-      </div>
+      </div> */}
 
       {/* Background AI Pattern */}
-      <div className="absolute inset-0 opacity-5">
+      {/* <div className="absolute inset-0 opacity-5">
         <Bot className="absolute top-6 left-6 w-8 h-8 text-emerald-400 animate-pulse" />
         <Sparkles className="absolute bottom-6 right-6 w-6 h-6 text-violet-400 animate-spin-slow" />
-      </div>
+      </div> */}
 
-      <h3 className="text-2xl font-bold text-slate-800 dark:text-white mb-6 text-center group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors duration-300 relative z-10">
+      {/* <h3 className="text-2xl font-bold text-slate-800 dark:text-white mb-6 text-center group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors duration-300 relative z-10">
         My AI-Powered Data Science Approach
       </h3>
-      
+
       <div className="grid grid-cols-1 md:grid-cols-5 gap-4 relative z-10">
         {[
           { step: '01', title: 'Data Collection', desc: 'AI-assisted data gathering', icon: <Database className="w-4 h-4" /> },
@@ -101,15 +103,15 @@ const Skills = () => {
             <p className="text-sm text-slate-600 dark:text-slate-300 group-hover/item:text-slate-700 dark:group-hover/item:text-slate-200 transition-colors duration-300">{item.desc}</p>
           </div>
         ))}
-      </div>
+      </div> */}
 
       {/* AI Processing Indicator */}
       <div className="mt-6 flex justify-center">
         <div className="flex items-center space-x-3 px-4 py-2 bg-slate-100/80 dark:bg-slate-800/80 rounded-full backdrop-blur-sm">
           <div className="flex space-x-1">
             <div className="w-2 h-2 bg-emerald-400 rounded-full animate-bounce"></div>
-            <div className="w-2 h-2 bg-violet-400 rounded-full animate-bounce" style={{animationDelay: '0.1s'}}></div>
-            <div className="w-2 h-2 bg-pink-400 rounded-full animate-bounce" style={{animationDelay: '0.2s'}}></div>
+            <div className="w-2 h-2 bg-violet-400 rounded-full animate-bounce" style={{ animationDelay: '0.1s' }}></div>
+            <div className="w-2 h-2 bg-pink-400 rounded-full animate-bounce" style={{ animationDelay: '0.2s' }}></div>
           </div>
           <span className="text-xs text-slate-600 dark:text-slate-400 font-mono">Processing with AI</span>
         </div>
@@ -135,19 +137,19 @@ const Skills = () => {
             </div>
           </div>
           <h2 className="text-3xl sm:text-4xl font-bold text-slate-800 dark:text-white mb-4 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-emerald-600 hover:to-violet-600 transition-all duration-300">
-            AI-Powered Technical Expertise
+            Technical Expertise
           </h2>
           <p className="text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto hover:text-slate-700 dark:hover:text-slate-200 transition-colors duration-300">
-            Comprehensive AI toolkit for next-generation data science and machine learning solutions.
+            Comprehensive Data Science and XM Implementation skillsets
           </p>
         </div>
 
-        <AIMLPipeline />
+        {/* <AIMLPipeline /> */}
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {skillCategories.map((category, index) => (
-            <div 
-              key={index} 
+            <div
+              key={index}
               className="bg-white/80 dark:bg-slate-900/80 p-8 rounded-3xl shadow-lg hover:shadow-xl dark:hover:shadow-slate-700/30 transition-all duration-500 hover:-translate-y-2 animate-fade-in-up border border-slate-200/50 dark:border-slate-700/50 group backdrop-blur-sm cursor-pointer"
               style={{ animationDelay: `${index * 0.1}s` }}
               onMouseEnter={() => setActiveCategory(index)}
@@ -161,22 +163,15 @@ const Skills = () => {
                   <div className="absolute inset-0 bg-gradient-to-r from-emerald-400/20 to-violet-400/20 animate-pulse"></div>
                 )}
               </div>
-              
+
               <h3 className="text-xl font-semibold text-slate-800 dark:text-white mb-4 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors duration-300">
                 {category.title}
               </h3>
 
-              {/* AI Feature Badge */}
-              <div className="mb-4 px-3 py-1 bg-gradient-to-r from-emerald-100/60 to-violet-100/60 dark:from-emerald-900/20 dark:to-violet-900/20 rounded-full backdrop-blur-sm border border-emerald-200/30 dark:border-emerald-800/30 group-hover:scale-105 transition-transform duration-300">
-                <div className="flex items-center space-x-2">
-                  <Sparkles className="w-3 h-3 text-emerald-600 dark:text-emerald-400 group-hover:animate-spin" />
-                  <span className="text-xs font-medium text-emerald-800 dark:text-emerald-300">{category.aiFeature}</span>
-                </div>
-              </div>
-              
+
               <div className="flex flex-wrap gap-2">
                 {category.skills.map((skill, skillIndex) => (
-                  <span 
+                  <span
                     key={skillIndex}
                     className="px-3 py-1 bg-slate-100/80 dark:bg-slate-800/80 text-slate-700 dark:text-slate-300 rounded-2xl text-sm font-medium hover:bg-slate-200/80 dark:hover:bg-slate-700/80 transition-all duration-300 animate-fade-in font-mono hover:scale-105 backdrop-blur-sm border border-slate-200/30 dark:border-slate-700/30 cursor-pointer group/skill"
                     style={{ animationDelay: `${(index * 0.1) + (skillIndex * 0.05)}s` }}
@@ -191,8 +186,8 @@ const Skills = () => {
                 <div className="mt-4 flex justify-center">
                   <div className="flex space-x-1">
                     <div className="w-2 h-2 bg-emerald-400 rounded-full animate-bounce"></div>
-                    <div className="w-2 h-2 bg-violet-400 rounded-full animate-bounce" style={{animationDelay: '0.1s'}}></div>
-                    <div className="w-2 h-2 bg-pink-400 rounded-full animate-bounce" style={{animationDelay: '0.2s'}}></div>
+                    <div className="w-2 h-2 bg-violet-400 rounded-full animate-bounce" style={{ animationDelay: '0.1s' }}></div>
+                    <div className="w-2 h-2 bg-pink-400 rounded-full animate-bounce" style={{ animationDelay: '0.2s' }}></div>
                   </div>
                 </div>
               )}
@@ -201,32 +196,7 @@ const Skills = () => {
         </div>
 
         {/* AI Capabilities Showcase */}
-        <div className="mt-16 p-8 bg-gradient-to-r from-emerald-50/80 to-violet-50/80 dark:from-emerald-900/20 dark:to-violet-900/20 rounded-3xl border border-emerald-200/50 dark:border-emerald-800/50 animate-fade-in-up backdrop-blur-sm hover:shadow-lg transition-all duration-500 group">
-          <div className="text-center">
-            <div className="flex justify-center mb-4">
-              <Bot className="w-12 h-12 text-emerald-600 dark:text-emerald-400 group-hover:animate-bounce" />
-            </div>
-            <h4 className="text-xl font-semibold text-slate-800 dark:text-white mb-3 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors duration-300">
-              AI-First Approach
-            </h4>
-            <p className="text-slate-600 dark:text-slate-300 leading-relaxed max-w-3xl mx-auto group-hover:text-slate-700 dark:group-hover:text-slate-200 transition-colors duration-300">
-              Leveraging cutting-edge artificial intelligence and machine learning technologies to automate complex data processes, 
-              enhance predictive accuracy, and deliver intelligent solutions that adapt and learn from your business needs. 
-              Every project incorporates AI-driven optimization for maximum efficiency and impact.
-            </p>
-            
-            <div className="mt-6 flex justify-center space-x-6">
-              {['AutoML', 'Neural Networks', 'Deep Learning', 'Computer Vision', 'NLP'].map((tech, index) => (
-                <div key={tech} className="text-center group/tech">
-                  <div className="w-8 h-8 bg-gradient-to-r from-emerald-600 to-violet-600 rounded-full flex items-center justify-center mb-2 mx-auto group-hover/tech:scale-110 transition-transform duration-300">
-                    <span className="text-white text-xs font-bold">{tech.slice(0, 2)}</span>
-                  </div>
-                  <span className="text-xs text-slate-600 dark:text-slate-400 group-hover/tech:text-emerald-600 dark:group-hover/tech:text-emerald-400 transition-colors duration-300">{tech}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
+
       </div>
     </section>
   );
