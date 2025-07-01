@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "type": "module",
   "homepage": "https://gunawan888.github.io/portfolio",
-  "scripts": {
+"scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
