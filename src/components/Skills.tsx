@@ -169,7 +169,6 @@ const Skills = () => {
                 {category.title}
               </h3>
 
-
               <div className="flex flex-wrap gap-2">
                 {category.skills.map((skill, skillIndex) => (
                   <span
