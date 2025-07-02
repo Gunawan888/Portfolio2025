@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "homepage": "https://davidgunawan99.github.io",
+  "homepage": "https://davidgunawan99.github.io/Portfolio2025/",
 "scripts": {
     "dev": "vite",
     "build": "vite build",
