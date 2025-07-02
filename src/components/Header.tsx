@@ -81,7 +81,7 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden bg-white dark:bg-slate-900 border-t border-gray-200 dark:border-slate-700 py-4 animate-slide-down">
             <nav className="flex flex-col space-y-4">
-              {['Home', 'About', 'Skills', 'Education', 'Projects', 'Experience', 'Contact'].map((item) => (
+              {['Home', 'About', 'Skills', 'Education', 'Experience', 'Contact'].map((item) => (
                 <button
                   key={item}
                   onClick={() => scrollToSection(item.toLowerCase())}
