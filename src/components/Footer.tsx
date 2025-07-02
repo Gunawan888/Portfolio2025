@@ -12,7 +12,7 @@ const Footer = () => {
               <h3 className="text-2xl font-bold">David Gunawan</h3>
             </div>
             <p className="text-slate-300 leading-relaxed max-w-md mb-4">
-              AI Specialist & Data Analyst passionate about transforming complex data
+              Data Analyst & XM Specialist passionate about transforming complex data
               into actionable insights through advanced analytics.
             </p>
             {/* <div className="flex items-center space-x-4 text-sm text-slate-400">

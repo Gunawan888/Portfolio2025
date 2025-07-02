@@ -9,13 +9,13 @@ const Skills = () => {
       title: 'Programming',
       icon: <Code className="w-6 h-6" />,
       color: 'cyan',
-      skills: ['Python', 'R', 'SQL', 'Java', 'C#', 'Javascript', 'Raect', 'Git'],
+      skills: ['Python', 'R', 'SQL', 'Java', 'C#', 'Javascript', 'React', 'Flutter', 'Git'],
     },
     {
       title: 'Data Analysis',
       icon: <BarChart3 className="w-6 h-6" />,
       color: 'violet',
-      skills: ['Pandas', 'NumPy', 'R', 'Statistical Analysis', 'A/B Testing', 'Time Series'],
+      skills: ['Pandas', 'NumPy', 'R', 'Statistical Analysis', 'A/B Testing', 'Time Series', 'SQL'],
     },
     // {
     //   title: 'Data Engineering',
@@ -29,7 +29,7 @@ const Skills = () => {
       title: 'Machine Learning',
       icon: <Brain className="w-6 h-6" />,
       color: 'emerald',
-      skills: ['TensorFlow', 'PyTorch', 'Scikit-learn', 'Keras', 'XGBoost', 'LightGBM'],
+      skills: ['TensorFlow', 'PyTorch', 'Scikit-learn', 'XGBoost'],
     },
     {
       title: 'Visualization',
@@ -39,16 +39,16 @@ const Skills = () => {
       aiFeature: 'Interactive AI Dashboards'
     },
     {
-      title: 'Cloud & MLOps',
+      title: 'Cloud & DevOps',
       icon: <Cloud className="w-6 h-6" />,
       color: 'indigo',
-      skills: ['AWS', 'GCP', 'Azure', 'Docker'],
+      skills: ['AWS', 'GCP', 'Azure', 'Docker', 'Firebase'],
     },
     {
       title: 'SaaS',
       icon: <Blocks className="w-6 h-6" />,
       color: 'cyan',
-      skills: ['Qualtrics', 'Confirmit (Forsta)', 'Voxco', 'Salesforce', 'SAP'],
+      skills: ['Qualtrics', 'Confirmit (Forsta)', 'Voxco', 'Salesforce', 'SAP', 'IBM SPSS'],
     },
   ];
 

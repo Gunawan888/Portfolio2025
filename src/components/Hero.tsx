@@ -149,7 +149,7 @@ const Hero = () => {
             </div>
 
             <p className="text-lg text-slate-500 dark:text-slate-400 max-w-2xl mx-auto leading-relaxed animate-fade-in-delay-2 hover:text-slate-600 dark:hover:text-slate-300 transition-colors duration-300">
-              I am an analytical, detail-oriented professional with comprehensive experience analysing and interpreting high volumes of complex data, developing and analysing database systems and solutions, preparing standardised reporting tools, and performing ad hoc analyses.
+              I'm passionate about using data to truly understand and improve the customer experience.
             </p>
           </div>
 
@@ -181,7 +181,7 @@ const Hero = () => {
             </div>
             <div className="text-center group hover:scale-105 transition-transform duration-300">
               <div className="text-2xl font-bold text-pink-600 dark:text-pink-400 animate-pulse" style={{ animationDelay: '1s' }}>Strategic</div>
-              <div className="text-xs text-slate-500 dark:text-slate-400">Insight</div>
+              <div className="text-xs text-slate-500 dark:text-slate-400">Insights</div>
             </div>
           </div>
         </div>

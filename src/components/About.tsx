@@ -129,21 +129,15 @@ const About = () => {
           <div className="space-y-6 animate-fade-in-left">
             <div className="prose prose-lg text-slate-600 dark:text-slate-300">
               <p className="transform hover:translate-x-2 transition-transform duration-300 hover:text-slate-700 dark:hover:text-slate-200 leading-relaxed">
-                With extensive experience in data science and AI, I specialize in building 
-                intelligent systems that solve real-world problems. My expertise spans from 
-                exploratory data analysis to deploying production-ready machine learning models 
-                that drive business transformation.
+                I'm passionate about using data to truly understand and improve the customer experience. In my role within Customer and Growth, focusing on CX and Voice of Customer, I get to combine my love for analytics with a drive to create real impact. I dig into feedback, trends, and metrics, turning raw data into clear insights that shape strategy, refine customer journeys, and ultimately boost growth.
               </p>
               <p className="transform hover:translate-x-2 transition-transform duration-300 hover:text-slate-700 dark:hover:text-slate-200 leading-relaxed">
-                I believe in the power of AI-driven decision making and the potential of machine learning 
-                to revolutionize industries. When I'm not training neural networks or analyzing datasets, 
-                you can find me contributing to open-source ML projects or researching the latest 
-                developments in artificial intelligence and deep learning.
+                My goal is to bridge the gap between complex data and better customer interactions. Whether it's finding pain points from surveys, segmenting customers, or predicting future needs, I ensure the customer's voice is not just heard, but deeply understood and acted on. This focus on data-driven customer advocacy is what drives me to help organizations build stronger relationships and achieve commercial success.
               </p>
             </div>
             
             <div className="flex flex-wrap gap-3">
-              {['Python', 'R', 'SQL', 'IBM SPSS', 'Power BI','Azure', 'Qualtrics'].map((skill, index) => (
+              {['Python', 'R', 'SQL', 'Javascript','IBM SPSS', 'Power BI','Azure','Qualtrics', 'Excel'].map((skill, index) => (
                 <span 
                   key={skill} 
                   className="group px-4 py-2 bg-gradient-to-r from-emerald-100/80 to-violet-100/80 dark:from-emerald-900/30 dark:to-violet-900/30 text-emerald-800 dark:text-emerald-300 rounded-2xl text-sm font-medium animate-fade-in-up font-mono hover:scale-105 transition-all duration-300 backdrop-blur-sm border border-emerald-200/50 dark:border-emerald-800/50 hover:shadow-lg cursor-pointer"
