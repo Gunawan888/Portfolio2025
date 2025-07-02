@@ -15,10 +15,10 @@ function App() {
       <Header />
       <Hero />
       <About />
+      <Experience />
       <Skills />
       <Education />
       <Projects />
-      <Experience />
       <Contact />
       <Footer />
     </div>

@@ -9,10 +9,10 @@ const Footer = () => {
           <div className="md:col-span-2">
             <div className="flex items-center space-x-2 mb-4 group">
               <Brain className="w-8 h-8 text-emerald-400 group-hover:rotate-12 transition-transform duration-300" />
-              <h3 className="text-2xl font-bold">Gunawan</h3>
+              <h3 className="text-2xl font-bold">David Gunawan</h3>
             </div>
             <p className="text-slate-300 leading-relaxed max-w-md mb-4">
-              AI Specialist & Data Analyst passionate about transforming complex data 
+              AI Specialist & Data Analyst passionate about transforming complex data
               into actionable insights through machine learning and advanced analytics.
             </p>
             <div className="flex items-center space-x-4 text-sm text-slate-400">
@@ -26,13 +26,13 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          
+
           <div>
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
               {['About', 'Skills', 'Education', 'Projects', 'Experience', 'Contact'].map((link) => (
                 <li key={link}>
-                  <button 
+                  <button
                     onClick={() => document.getElementById(link.toLowerCase())?.scrollIntoView({ behavior: 'smooth' })}
                     className="text-slate-300 hover:text-emerald-400 transition-all duration-300 hover:translate-x-1"
                   >
@@ -42,7 +42,7 @@ const Footer = () => {
               ))}
             </ul>
           </div>
-          
+
           <div>
             <h4 className="text-lg font-semibold mb-4">Expertise</h4>
             <ul className="space-y-2 text-slate-300">
@@ -54,7 +54,7 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        
+
         <div className="border-t border-slate-700 mt-8 pt-8 text-center">
           <p className="text-slate-300 flex items-center justify-center space-x-2">
             <span>© 2025 Gunawan. Crafted with</span>

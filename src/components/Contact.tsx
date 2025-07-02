@@ -52,19 +52,12 @@ const Contact = () => {
   ];
 
   const socialLinks = [
-    { icon: <Github className="w-6 h-6" />, name: 'GitHub', url: '#', color: 'hover:bg-slate-600' },
-    { icon: <Linkedin className="w-6 h-6" />, name: 'LinkedIn', url: '#', color: 'hover:bg-blue-600' },
-    { icon: <Twitter className="w-6 h-6" />, name: 'Twitter', url: '#', color: 'hover:bg-cyan-500' },
-    { icon: <MessageSquare className="w-6 h-6" />, name: 'Kaggle', url: '#', color: 'hover:bg-emerald-600' }
+    { icon: <Github className="w-6 h-6" />, name: 'GitHub', url: 'https://github.com/Gunawan888', color: 'hover:bg-slate-600' },
+    { icon: <Linkedin className="w-6 h-6" />, name: 'LinkedIn', url: 'https://www.linkedin.com/in/david-gunawan-91bbb6150/', color: 'hover:bg-blue-600' },
+    // { icon: <Twitter className="w-6 h-6" />, name: 'Twitter', url: '#', color: 'hover:bg-cyan-500' },
+    { icon: <Mail className="w-6 h-6" />, name: 'Email', url: 'mailto:david.gunawan888@gmail.com', color: 'hover:bg-emerald-600' }
   ];
 
-  const consultationTypes = [
-    'Data Strategy Consultation',
-    'ML Model Review',
-    'AI Implementation Planning',
-    'Team Training & Workshops',
-    'Technical Architecture Review'
-  ];
 
   return (
     <section id="contact" className="py-20 bg-slate-50/50 dark:bg-slate-800/50">
@@ -73,15 +66,15 @@ const Contact = () => {
           <h2 className="text-3xl sm:text-4xl font-bold text-slate-800 dark:text-white mb-4">
             Let's Collaborate
           </h2>
-          <p className="text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">
+          {/* <p className="text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">
             Ready to transform your data into actionable insights? Let's discuss your AI and data science needs.
-          </p>
+          </p> */}
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact Information */}
           <div className="space-y-8 animate-fade-in-left">
-            <div>
+            {/* <div>
               <h3 className="text-2xl font-semibold text-slate-800 dark:text-white mb-6">
                 Get In Touch
               </h3>
@@ -90,7 +83,7 @@ const Contact = () => {
                 or want to explore AI opportunities for your business, I'm here to help. 
                 Let's turn your data challenges into competitive advantages.
               </p>
-            </div>
+            </div> */}
 
             <div className="space-y-6">
               {contactInfo.map((info, index) => (
@@ -224,13 +217,13 @@ const Contact = () => {
                 <span>Send Message</span>
               </button>
             </form>
-
+{/* 
             <div className="mt-6 p-4 bg-emerald-50/80 dark:bg-emerald-900/20 rounded-2xl border border-emerald-200/50 dark:border-emerald-800/50 backdrop-blur-sm">
               <p className="text-sm text-emerald-800 dark:text-emerald-300">
                 <strong>Response Time:</strong> I typically respond within 24 hours. 
                 For urgent projects, please mention it in your message.
               </p>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

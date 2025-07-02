@@ -31,7 +31,7 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <div className="text-2xl font-bold text-slate-800 dark:text-white animate-fade-in">
-            DG
+            <img src="src/image/icon.png" width="40" height="40"></img>
           </div>
           
           {/* Desktop Navigation */}
@@ -90,13 +90,13 @@ const Header = () => {
                 </button>
               ))}
               <div className="flex space-x-4 px-4 pt-4 border-t border-gray-200 dark:border-slate-700">
-                <a href="#" className="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                <a href="https://github.com/Gunawan888" className="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
                   <Github size={20} />
                 </a>
-                <a href="#" className="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                <a href="https://www.linkedin.com/in/david-gunawan-91bbb6150/" className="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
                   <Linkedin size={20} />
                 </a>
-                <a href="#" className="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                <a href="mailto:david.gunawan888@gmail.com" className="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
                   <Mail size={20} />
                 </a>
               </div>
