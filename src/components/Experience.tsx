@@ -2,32 +2,37 @@ import React from 'react';
 import { Calendar, MapPin, Award } from 'lucide-react';
 
 const Experience = () => {
+
+
   const experiences = [
     {
-      title: 'Senior Consultant',
+      title: 'Senior Consultant (Customer & Growth)',
       company: 'Ernst & Young',
       location: 'Sydney',
       period: 'Sep 2023 - Present',
-      description: 'Leading AI initiatives and machine learning model development for enterprise clients. Architecting scalable ML pipelines and mentoring junior data scientists.',
-      achievements: [
-        'Led development of production ML systems serving millions of users',
-        'Implemented MLOps practices reducing deployment time significantly',
-        'Mentored team of data scientists and ML engineers',
-        'Drove adoption of modern ML frameworks and best practices'
-      ]
+      description: "As a Senior Consultant within EY's Customer and Growth practice, I advise clients on developing and implementing customer-centric strategies and solutions to drive sustainable growth and enhance competitive advantage.",
+      responsibility: [
+        'Designing and implementing comprehensive Customer Experience (CX) programs through various methodologies, including survey development and deployment.',
+        'Performing advanced data cleaning and manipulation using scripting languages such as Python and R to ensure data quality and integrity for robust analysis.',
+        'Developing impactful data visualizations (Power BI, QGIS, Powerpoint) to translate complex insights into actionable recommendations for clients.',
+        'Leading full Qualtrics XM platform implementations, encompassing survey design, program configuration, and advanced dashboarding.',
+        'Integrating Qualtrics XM with various third-party systems including CRM, ERP, and other critical business applications to create a unified view of customer data.'
+      ],
+      skills: ['Python', 'R', 'Qualtrics', 'Javascript', 'Power BI', 'QGIS', 'Salesforce', 'Excel', 'Powerpoint', 'IBM SPSS'],
     },
     {
       title: 'Technical Consultant',
       company: 'Watermelon Research',
       location: 'Sydney, Australia',
       period: 'Dec 2020 - Sep 2023',
-      description: 'Developed predictive models for financial risk assessment and fraud detection. Built real-time analytics dashboards for executive decision making.',
-      achievements: [
+      description: 'As a technical consultant, I oversaw the deliveries of multiple large-scale Voice of Customer (VoC) programnmes. Some of my clients includes Big 4 Banks and FMCGs.',
+      responsibility: [
         'Technical delivery of online software solutions, such as surveys, reporting and dashboarding tools (based on a SaaS environment (Confirmit) using ASP, JScript.NET, jQuery, HTML and CSS)',
         'Developing bespoke dashboards using Confirmit Reportal (Integrated with Highcharts)',
         'Implementation and maintenance of automation processes using Python script',
         'Liaising with stakeholders to scope out technical feasibility, advising on best practice and formalising specifications'
-      ]
+      ],
+      skills: ['Python', 'Javascript', 'JScript.NET', 'Confirmit (Forsta)', 'Highcharts', 'Powerpoint', 'Excel'],
     },
     {
       title: 'Data Analyst (Salesforce)',
@@ -35,12 +40,13 @@ const Experience = () => {
       location: 'Sydney, Australia',
       period: 'Dec 2019 - Apr 2020',
       description: 'Performed exploratory data analysis and created business intelligence reports. Collaborated with cross-functional teams to identify data-driven opportunities.',
-      achievements: [
+      responsibility: [
         'Developed and managed real-time sales performance dashboard (based on Salesforce environment using HTML, CSS, and Salesforce Object Query Language)',
         'Generated weekly sales KPI report for sales manager (Power BI & Excel)',
         'Provided Salesforce administrative support to sales team & managed data integrity between Salesforce and NetSuite',
         'Planned and set up dashboard hierarchy management for users across Australia and USA'
-      ]
+      ],
+      skills: ['Salesforce', 'Power BI', 'Excel', 'Javascript'],
     },
     {
       title: 'Research Assistant',
@@ -48,11 +54,24 @@ const Experience = () => {
       location: 'Sydney, Australia',
       period: 'Dec 2018 - Aug 2019',
       description: 'Working with Dr Jing Song Xu on Automatic Sheep Counting in Live Export Industry research. My responsibility includes:',
-      achievements: [
+      responsibility: [
         'Preprocessed sheep training datasets and performed anomaly detection using Python script',
         'Trained and improved the performance of TensorFlow Mobile model',
         'Evaluated & benchmarked several object detection model frameworks such as TensorFlow, OpenCV, SSD Mobile'
-      ]
+      ],
+      skills: ['Python', 'Tensorflow', 'OpenCV'],
+    },
+    {
+      title: 'Teaching Assistant (Java)',
+      company: 'University of Technology Sydney',
+      location: 'Sydney, Australia',
+      period: 'Dec 2018 - Dec 2019',
+      description: 'As a Teaching Assistant, I provided support to lecturers and tutors with preparing and delivering learning materials to undergraduate students in the Java Programming subject.',
+      responsibility: [
+        'Preparing and delivering Java programming learning materials to undergraduate students',
+        'Assisted the group of up to 18 students by overseeing their lesson participation, offering practical exercises in class, and supervising assessments and exams',
+      ],
+      skills: ['Java'],
     }
   ];
 
@@ -108,16 +127,31 @@ const Experience = () => {
                       {exp.description}
                     </p>
 
+                    <div className="flex flex-wrap gap-3">
+                      {exp.skills.map((skill, index) => (
+                        <span
+                          key={skill}
+                          className="group px-4 py-2 bg-gradient-to-r from-emerald-100/80 to-violet-100/80 dark:from-emerald-900/30 dark:to-violet-900/30 text-emerald-800 dark:text-emerald-300 rounded-2xl text-sm font-medium animate-fade-in-up font-mono hover:scale-105 transition-all duration-300 backdrop-blur-sm border border-emerald-200/50 dark:border-emerald-800/50 hover:shadow-lg cursor-pointer"
+                          style={{ animationDelay: `${index * 0.1}s` }}
+                        >
+                          <span className="group-hover:animate-pulse">{skill}</span>
+                        </span>
+                        
+                      ))}
+                    </div>
+
+                    <br></br>
+
                     <div className="space-y-2">
                       <h4 className="font-medium text-slate-800 dark:text-white flex items-center">
                         <Award size={16} className="mr-2 text-violet-600 dark:text-violet-400" />
-                        Key Achievements:
+                        Key Responsibilities:
                       </h4>
                       <ul className="space-y-1">
-                        {exp.achievements.map((achievement, achievementIndex) => (
-                          <li key={achievementIndex} className="text-slate-600 dark:text-slate-300 text-sm flex items-start hover:translate-x-2 transition-transform duration-300">
+                        {exp.responsibility.map((responsibility, responsibilityIndex) => (
+                          <li key={responsibilityIndex} className="text-slate-600 dark:text-slate-300 text-sm flex items-start hover:translate-x-2 transition-transform duration-300">
                             <span className="w-2 h-2 bg-gradient-to-r from-emerald-600 to-violet-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                            {achievement}
+                            {responsibility}
                           </li>
                         ))}
                       </ul>

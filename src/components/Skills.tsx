@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
-import { Brain, Database, BarChart3, Code, Cloud, Cpu, Bot, Zap, Activity, Sparkles } from 'lucide-react';
+import { Brain, Database, BarChart3, Code, Cloud, Cpu, Bot, Zap, Activity, Sparkles, Blocks } from 'lucide-react';
 
 const Skills = () => {
   const [activeCategory, setActiveCategory] = useState<number | null>(null);
 
   const skillCategories = [
     {
-      title: 'Machine Learning',
-      icon: <Brain className="w-6 h-6" />,
-      color: 'emerald',
-      skills: ['TensorFlow', 'PyTorch', 'Scikit-learn', 'Keras', 'XGBoost', 'LightGBM'],
+      title: 'Programming',
+      icon: <Code className="w-6 h-6" />,
+      color: 'cyan',
+      skills: ['Python', 'R', 'SQL', 'Java', 'C#', 'Javascript', 'Raect', 'Git'],
     },
     {
       title: 'Data Analysis',
@@ -24,11 +24,12 @@ const Skills = () => {
     //   skills: ['Apache Spark', 'Hadoop', 'Kafka', 'Airflow', 'ETL Pipelines', 'Data Warehousing'],
     //   aiFeature: 'Intelligent Data Pipelines'
     // },
+
     {
-      title: 'Programming',
-      icon: <Code className="w-6 h-6" />,
-      color: 'cyan',
-      skills: ['Python', 'R', 'SQL', 'Java', 'C#', 'Javascript', 'Raect', 'Git'],
+      title: 'Machine Learning',
+      icon: <Brain className="w-6 h-6" />,
+      color: 'emerald',
+      skills: ['TensorFlow', 'PyTorch', 'Scikit-learn', 'Keras', 'XGBoost', 'LightGBM'],
     },
     {
       title: 'Visualization',
@@ -45,7 +46,7 @@ const Skills = () => {
     },
     {
       title: 'SaaS',
-      icon: <Code className="w-6 h-6" />,
+      icon: <Blocks className="w-6 h-6" />,
       color: 'cyan',
       skills: ['Qualtrics', 'Confirmit (Forsta)', 'Voxco', 'Salesforce', 'SAP'],
     },

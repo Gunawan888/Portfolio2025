@@ -65,7 +65,7 @@ const About = () => {
               <Bot className="w-8 h-8 text-white relative z-10 group-hover/item:animate-pulse" />
               <div className="absolute inset-0 bg-gradient-to-r from-violet-400 to-violet-500 opacity-0 group-hover/item:opacity-50 transition-opacity duration-300"></div>
             </div>
-            <div className="text-sm font-medium text-slate-700 dark:text-slate-300 group-hover/item:text-violet-600 dark:group-hover/item:text-violet-400 transition-colors duration-300">AI Processing</div>
+            <div className="text-sm font-medium text-slate-700 dark:text-slate-300 group-hover/item:text-violet-600 dark:group-hover/item:text-violet-400 transition-colors duration-300">Advanced Analytics</div>
           </div>
           
           <div className="flex-1 h-0.5 bg-gradient-to-r from-violet-500 to-pink-500 mx-4 relative overflow-hidden">
@@ -86,7 +86,7 @@ const About = () => {
         </div>
 
         {/* AI Activity Indicator */}
-        <div className="mt-6 flex justify-center">
+        {/* <div className="mt-6 flex justify-center">
           <div className="flex items-center space-x-2 px-4 py-2 bg-slate-100/80 dark:bg-slate-800/80 rounded-full backdrop-blur-sm">
             <Activity className="w-4 h-4 text-emerald-600 dark:text-emerald-400 animate-pulse" />
             <span className="text-xs text-slate-600 dark:text-slate-400 font-mono">AI Processing Active</span>
@@ -96,7 +96,7 @@ const About = () => {
               <div className="w-1 h-1 bg-pink-400 rounded-full animate-bounce" style={{animationDelay: '0.2s'}}></div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

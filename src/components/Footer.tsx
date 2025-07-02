@@ -13,9 +13,9 @@ const Footer = () => {
             </div>
             <p className="text-slate-300 leading-relaxed max-w-md mb-4">
               AI Specialist & Data Analyst passionate about transforming complex data
-              into actionable insights through machine learning and advanced analytics.
+              into actionable insights through advanced analytics.
             </p>
-            <div className="flex items-center space-x-4 text-sm text-slate-400">
+            {/* <div className="flex items-center space-x-4 text-sm text-slate-400">
               <div className="flex items-center space-x-1 hover:text-emerald-400 transition-colors duration-300">
                 <BarChart3 className="w-4 h-4" />
                 <span>ML Solutions</span>
@@ -24,13 +24,13 @@ const Footer = () => {
                 <Database className="w-4 h-4" />
                 <span>Data Insights</span>
               </div>
-            </div>
+            </div> */}
           </div>
 
           <div>
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
-              {['About', 'Skills', 'Education', 'Projects', 'Experience', 'Contact'].map((link) => (
+              {['About', 'Experience','Skills', 'Education',  'Contact'].map((link) => (
                 <li key={link}>
                   <button
                     onClick={() => document.getElementById(link.toLowerCase())?.scrollIntoView({ behavior: 'smooth' })}
@@ -46,7 +46,7 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Expertise</h4>
             <ul className="space-y-2 text-slate-300">
-              {['Machine Learning', 'Data Analytics', 'AI Implementation', 'Business Intelligence', 'MLOps & Deployment'].map((item, index) => (
+              {['Machine Learning', 'Data Analytics', 'Business Intelligence', 'VoC Deployment'].map((item, index) => (
                 <li key={item} className="hover:text-violet-400 transition-colors duration-300 hover:translate-x-1" style={{ animationDelay: `${index * 0.1}s` }}>
                   {item}
                 </li>

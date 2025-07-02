@@ -1,5 +1,5 @@
 import React from 'react';
-import { GraduationCap, Award, BookOpen, Calendar, Trophy, Star } from 'lucide-react';
+import { GraduationCap, Award, BookOpen, Calendar, Trophy, Star, ExternalLink } from 'lucide-react';
 
 const Education = () => {
   const education = [
@@ -43,7 +43,7 @@ const Education = () => {
       issuer: 'Confluent',
       date: '2023',
       icon: <Award className="w-5 h-5" />,
-      level: 'Specialty',
+      level: 'Professional',
       link: "https://www.credential.net/09ad94a9-4bc4-45b0-8733-e061bd9e4edc?trk=public_profile_see-credential"
     },
     {
@@ -114,7 +114,7 @@ const Education = () => {
 
             <div className="space-y-8">
               {education.map((edu, index) => (
-                <div 
+                <div
                   key={index}
                   className="bg-gradient-to-r from-slate-50/80 to-emerald-50/80 dark:from-slate-800/80 dark:to-emerald-900/30 p-6 rounded-3xl hover:shadow-lg dark:hover:shadow-slate-700/30 transition-all duration-500 hover:-translate-y-2 animate-fade-in-up border border-slate-200/50 dark:border-slate-700/50 group backdrop-blur-sm"
                   style={{ animationDelay: `${index * 0.2}s` }}
@@ -128,15 +128,15 @@ const Education = () => {
                       {edu.period}
                     </div>
                   </div>
-                  
+
                   <div className="text-slate-600 dark:text-slate-300 mb-2">
                     <span className="font-medium">{edu.institution}</span> • {edu.location}
                   </div>
-                  
+
                   <p className="text-slate-600 dark:text-slate-300 mb-4 leading-relaxed">
                     {edu.description}
                   </p>
-                  
+
                   <div className="space-y-2">
                     <h5 className="font-medium text-slate-800 dark:text-white text-sm">Key Achievements:</h5>
                     <ul className="space-y-1">
@@ -164,7 +164,7 @@ const Education = () => {
 
             <div className="space-y-4">
               {certifications.map((cert, index) => (
-                <div 
+                <div
                   key={index}
                   className="bg-slate-50/80 dark:bg-slate-800/80 p-6 rounded-3xl hover:shadow-lg dark:hover:shadow-slate-700/30 transition-all duration-500 hover:-translate-y-1 animate-fade-in-up border border-slate-200/50 dark:border-slate-700/50 group backdrop-blur-sm"
                   style={{ animationDelay: `${index * 0.1}s` }}
@@ -189,6 +189,27 @@ const Education = () => {
                     <span className="text-slate-500 dark:text-slate-400 text-sm font-medium">
                       {cert.date}
                     </span>
+                  </div>
+                  <br></br>
+                  <div className="flex justify-between items-center">
+                    <div className="flex space-x-4">
+                      <a
+                        href={cert.link}
+                        className="group/link flex items-center space-x-2 text-emerald-600 dark:text-emerald-400 hover:text-emerald-700 dark:hover:text-emerald-300 transition-colors hover:scale-105 duration-300"
+                      >
+                        <ExternalLink size={16} className="group-hover/link:animate-bounce" />
+                        <span className="text-sm font-medium">Link</span>
+                      </a>
+                      {/* <a
+                        href={project.githubUrl}
+                        className="group/link flex items-center space-x-2 text-slate-600 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-300 transition-colors hover:scale-105 duration-300"
+                      >
+                        <Github size={16} className="group-hover/link:animate-bounce" />
+                        <span className="text-sm font-medium">Code</span>
+                      </a>
+                    </div>
+                    <ArrowRight size={16} className="text-slate-400 dark:text-slate-500 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 group-hover:translate-x-1 transition-all duration-300" /> */}
+                    </div>
                   </div>
                 </div>
               ))}

@@ -155,7 +155,7 @@ const Hero = () => {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in-delay-3">
             <button
-              onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
+              onClick={() => document.getElementById('experience')?.scrollIntoView({ behavior: 'smooth' })}
               className="group bg-gradient-to-r from-emerald-600 to-violet-600 text-white px-8 py-3 rounded-2xl font-semibold hover:from-emerald-700 hover:to-violet-700 transition-all duration-300 flex items-center space-x-2 shadow-lg hover:shadow-xl transform hover:-translate-y-1 hover:scale-105 backdrop-blur-sm relative overflow-hidden"
             >
               <div className="absolute inset-0 bg-gradient-to-r from-emerald-400 to-violet-400 opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
